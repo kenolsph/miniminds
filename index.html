@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Mini Therapies Hub | Whole Child Development</title>
+    <link rel="icon" type="image/x-icon" href="https://miniminds.org/wp-content/uploads/2024/06/Mini-Minds-Logo-2024.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        .custom-bg {
+            background-image: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(245,245,255,0.96) 100%);
+        }
+        .hero-bg {
+            background-image: url('https://miniminds.org/wp-content/uploads/2022/12/Kids-Learning-in-Carmel-IN-1.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .testimonial-card {
+            box-shadow: 0 10px 30px -5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px -5px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Floating Contact Button -->
+    <div class="fixed right-6 bottom-6 z-50">
+        <a href="mailto:info@miniminds.org" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110">
+            <i data-feather="mail"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#">
+                        <img class="h-12 w-auto" src="https://miniminds.org/wp-content/uploads/2024/06/Mini-Minds-Logo-2024.png" alt="Mini Minds Logo">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-8">
+                        <a href="#" class="text-blue-600 font-medium hover:text-blue-800 transition">Home</a>
+                        <div class="relative group">
+                            <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center space-x-1">
+                                <span>Our Therapies</span>
+                                <i data-feather="chevron-down" class="w-4 h-4"></i>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Speech Therapy</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Occupational Therapy</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Mental Health Therapy</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Feeding Therapy</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Community Events</a>
+                        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">About Us</a>
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition">Contact Us</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <i data-feather="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative hero-bg bg-gray-100 py-32">
+        <div class="absolute inset-0 bg-blue-800 opacity-60"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-serif">Empowering families to raise children who THRIVE!</h1>
+                <p class="text-xl text-blue-100 mb-8">Whole brain, whole child, whole family approach to developmental therapies.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-blue-800 px-8 py-3 rounded-full font-medium hover:bg-blue-50 transition">Our Therapies</a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-blue-800 transition">About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">With Three Convenient Locations</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">CARMEL, FISHERS & BROAD RIPPLE - Serving Marion, Hamilton & Hancock Counties</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <i data-feather="map-pin" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">CARMEL</h3>
+                    <p class="text-gray-600 mb-4">580 East Carmel Drive</p>
+                    <a href="https://goo.gl/maps/gyX324ZT2N2iJid77" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Map <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <i data-feather="map-pin" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">FISHERS</h3>
+                    <p class="text-gray-600 mb-4">10100 Lantern Road, Suite 150</p>
+                    <a href="https://maps.app.goo.gl/QQpzR7mf4vxUc3c48" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Map <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-8 text-center">
+                    <i data-feather="map-pin" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">BROAD RIPPLE</h3>
+                    <p class="text-gray-600 mb-4">6152 North College Avenue</p>
+                    <a href="https://goo.gl/maps/wxztzXfWSwHuH54j9" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        View Map <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">Our Unique Approach</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Creating a family culture where challenges become opportunities for growth and connection</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://miniminds.org/wp-content/uploads/2022/10/Art-Therapy-for-Kids-370x233.png" alt="Whole Brain Approach" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl font-bold mb-2">1</div>
+                        <h3 class="text-xl font-bold mb-2">Whole Brain</h3>
+                        <p class="text-gray-600 mb-4">The brain plays a central role in every aspect of a child's life where parents desire success.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://miniminds.org/wp-content/uploads/2022/10/Speech-Language-Pathology-370x233.webp" alt="Whole Child Approach" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl font-bold mb-2">2</div>
+                        <h3 class="text-xl font-bold mb-2">Whole Child</h3>
+                        <p class="text-gray-600 mb-4">Experts in education, speech pathology, occupational therapy, sensory integration, and mental health.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://miniminds.org/wp-content/uploads/2017/06/Whole-Family-370x233.png" alt="Whole Family Approach" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="text-blue-600 text-4xl font-bold mb-2">3</div>
+                        <h3 class="text-xl font-bold mb-2">Whole Family</h3>
+                        <p class="text-gray-600 mb-4">Transformative relationships to discover deep insights about your child's brain development.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">How We Create Change</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive services tailored to each child and family's unique needs</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="search" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Discovery Consultations</h3>
+                    <p class="text-sm text-gray-600">Begin your journey with us</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="activity" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Occupational Therapy</h3>
+                    <p class="text-sm text-gray-600">Enhancing daily life skills</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="message-square" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Speech Therapy</h3>
+                    <p class="text-sm text-gray-600">Communication development</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="heart" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Mental Health</h3>
+                    <p class="text-sm text-gray-600">Emotional wellbeing</p>
+                </a>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6 mt-6">
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="feather" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Art Therapy</h3>
+                    <p class="text-sm text-gray-600">Creative expression</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="users" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Parent Coaching</h3>
+                    <p class="text-sm text-gray-600">Family support</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="book-open" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Community Classes</h3>
+                    <p class="text-sm text-gray-600">Learning together</p>
+                </a>
+                <a href="#" class="group bg-gray-50 rounded-lg p-6 text-center hover:bg-blue-50 transition">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-200 transition">
+                        <i data-feather="mic" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-medium mb-2">Speaking Engagements</h3>
+                    <p class="text-sm text-gray-600">Sharing knowledge</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4 font-serif">What Families Say</h2>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">Hear from parents who have experienced our transformative approach</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-800 testimonial-card rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"Ms Taryn has done a phenomenal job helping my boys to strengthen their phonics skills as well as literacy fluency and comprehension."</p>
+                    <div class="font-medium">~ Audrey Wehr</div>
+                </div>
+                <div class="bg-white text-gray-800 testimonial-card rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"Priscilla is always kind and supportive in therapy & feel safe to express my feelings. I feel she really listens & I have learned helpful coping skills."</p>
+                    <div class="font-medium">~ Jillian Jones</div>
+                </div>
+                <div class="bg-white text-gray-800 testimonial-card rounded-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                            <i data-feather="star" class="w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="mb-6 italic">"My daughter loves working with Taryn. She is patient, caring and kind. My daughter looks forward to their time together."</p>
+                    <div class="font-medium">~ Heather Coleman</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Therapists Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">Meet Our Therapists</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive evaluations, expert assessments, and individualized plans</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://miniminds.org/wp-content/uploads/2017/06/Megan-Peck-370x370.jpg" alt="Megan Peck" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Megan Peck</h3>
+                        <p class="text-blue-600 mb-4">Owner and Practice Manager</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Profile <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://miniminds.org/wp-content/uploads/2023/07/Melissa-Grimes-1-370x370.jpg" alt="Melissa Grimes" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Melissa Grimes</h3>
+                        <p class="text-blue-600 mb-4">Lead Mental Health Therapist</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Profile <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://miniminds.org/wp-content/uploads/2023/12/Taylor-Gurley-1-370x370.jpg" alt="Taylor Gurley" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Taylor Gurley</h3>
+                        <p class="text-blue-600 mb-4">Lead Occupational Therapist</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Profile <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                    <img src="https://miniminds.org/wp-content/uploads/2023/07/Nicole-Allen-370x370.jpg" alt="Nicole Allen" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1">Nicole Allen</h3>
+                        <p class="text-blue-600 mb-4">Lead Speech Language Therapist</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                            View Profile <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium inline-flex items-center transition">
+                    Meet All Therapists <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-blue-50 rounded-xl p-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4 font-serif">Stay Connected</h2>
+            <p class="text-xl text-gray-600 mb-8">Subscribe to our newsletter for updates on services, events, and child development resources</p>
+            <form class="max-w-md mx-auto">
+                <div class="flex">
+                    <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-l-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-r-lg font-medium transition">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <img src="https://miniminds.org/wp-content/uploads/2024/06/Mini-Minds-Logo-2024.png" alt="Mini Minds Logo" class="h-12 mb-6">
+                    <p class="text-gray-400">Empowering families to raise children who thrive through our whole brain, whole child, whole family approach.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Our Therapies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Community Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Info</h3>
+                    <address class="not-italic text-gray-400 space-y-3">
+                        <div>
+                            <div class="font-medium text-white">CARMEL</div>
+                            <p>580 East Carmel Drive, Suite 400</p>
+                        </div>
+                        <div>
+                            <div class="font-medium text-white">FISHERS</div>
+                            <p>10100 Lantern Road, Suite 150</p>
+                        </div>
+                        <div>
+                            <div class="font-medium text-white">BROAD RIPPLE</div>
+                            <p>6152 North College Avenue</p>
+                        </div>
+                        <div>
+                            <div class="font-medium text-white">EMAIL</div>
+                            <a href="mailto:info@miniminds.org" class="hover:text-white transition">info@miniminds.org</a>
+                        </div>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2024 Mini Minds. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
