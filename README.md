@@ -9,7 +9,7 @@ The goal of this project is to create a web version (clone, port, or inspired de
 Original site: https://miniminds.org
 
 
-🚀 Features
+🚀 Features  
 Home / Landing page — with hero banner, “How It Works”, key services
 Therapies section — list of therapy types (speech, occupational, mental health, etc.)
 Locations / Contact — addresses for Carmel, Fishers, Broad Ripple
