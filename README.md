@@ -8,7 +8,6 @@ Including speech & language therapy, occupational therapy, mental health therapy
 The goal of this project is to create a web version (clone, port, or inspired design) that demonstrates UI/UX, routing, data handling, and content management for a site like Mini Minds.
 Original site: https://miniminds.org
 
-
 🚀 Features  
 Home / Landing page — with hero banner, “How It Works”, key services
 Therapies section — list of therapy types (speech, occupational, mental health, etc.)
